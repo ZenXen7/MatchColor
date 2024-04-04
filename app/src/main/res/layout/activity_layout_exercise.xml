@@ -1,0 +1,721 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/myName"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.02"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.00999999" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="44dp"
+        android:layout_height="21dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.00999999"
+        app:srcCompat="@android:drawable/btn_dropdown" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="40dp"
+        android:layout_height="45dp"
+        android:backgroundTint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.82"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@android:drawable/ic_dialog_info" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.983"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@android:drawable/stat_notify_chat" />
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="94dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.04000002">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageView46"
+                    android:layout_width="86dp"
+                    android:layout_height="64dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/jon_jones"
+                    tools:srcCompat="@tools:sample/avatars" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="match_parent"
+                    android:layout_height="29dp"
+                    android:layout_weight="1"
+                    android:text="@string/Name"
+                    android:textAlignment="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageView46"
+                    android:layout_width="86dp"
+                    android:layout_height="64dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/jon_jones"
+                    tools:srcCompat="@tools:sample/avatars" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="match_parent"
+                    android:layout_height="29dp"
+                    android:layout_weight="1"
+                    android:text="@string/Name"
+                    android:textAlignment="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageView46"
+                    android:layout_width="86dp"
+                    android:layout_height="64dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/jon_jones"
+                    tools:srcCompat="@tools:sample/avatars" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="match_parent"
+                    android:layout_height="29dp"
+                    android:layout_weight="1"
+                    android:text="@string/Name"
+                    android:textAlignment="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageView46"
+                    android:layout_width="86dp"
+                    android:layout_height="64dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/jon_jones"
+                    tools:srcCompat="@tools:sample/avatars" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="match_parent"
+                    android:layout_height="29dp"
+                    android:layout_weight="1"
+                    android:text="@string/Name"
+                    android:textAlignment="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageView46"
+                    android:layout_width="86dp"
+                    android:layout_height="64dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/jon_jones"
+                    tools:srcCompat="@tools:sample/avatars" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="match_parent"
+                    android:layout_height="29dp"
+                    android:layout_weight="1"
+                    android:text="@string/Name"
+                    android:textAlignment="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageView46"
+                    android:layout_width="86dp"
+                    android:layout_height="64dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/jon_jones"
+                    tools:srcCompat="@tools:sample/avatars" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="match_parent"
+                    android:layout_height="29dp"
+                    android:layout_weight="1"
+                    android:text="@string/Name"
+                    android:textAlignment="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageView46"
+                    android:layout_width="86dp"
+                    android:layout_height="64dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/jon_jones"
+                    tools:srcCompat="@tools:sample/avatars" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="match_parent"
+                    android:layout_height="29dp"
+                    android:layout_weight="1"
+                    android:text="@string/Name"
+                    android:textAlignment="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageView46"
+                    android:layout_width="86dp"
+                    android:layout_height="64dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/jon_jones"
+                    tools:srcCompat="@tools:sample/avatars" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="match_parent"
+                    android:layout_height="29dp"
+                    android:layout_weight="1"
+                    android:text="@string/Name" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageView46"
+                    android:layout_width="86dp"
+                    android:layout_height="64dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/jon_jones"
+                    tools:srcCompat="@tools:sample/avatars" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="match_parent"
+                    android:layout_height="29dp"
+                    android:layout_weight="1"
+                    android:text="@string/Name" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageView46"
+                    android:layout_width="86dp"
+                    android:layout_height="64dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/jon_jones"
+                    tools:srcCompat="@tools:sample/avatars" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="match_parent"
+                    android:layout_height="29dp"
+                    android:layout_weight="1"
+                    android:text="@string/Name" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageView46"
+                    android:layout_width="86dp"
+                    android:layout_height="64dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/jon_jones"
+                    tools:srcCompat="@tools:sample/avatars" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="match_parent"
+                    android:layout_height="29dp"
+                    android:layout_weight="1"
+                    android:text="@string/Name" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="565dp"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView"
+        tools:layout_editor_absoluteX="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="1.0"
+                        tools:layout_editor_absoluteX="1dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="62dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/imageView41"
+                                android:layout_width="24dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/jon_jones"
+                                tools:srcCompat="@tools:sample/avatars" />
+
+                            <TextView
+                                android:id="@+id/textView5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="Von Godinez"
+                                android:textAlignment="center" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton7"
+                                android:layout_width="9dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:backgroundTint="#000000"
+                                app:srcCompat="@android:drawable/ic_dialog_dialer" />
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/imageView50"
+                            android:layout_width="wrap_content"
+                            android:layout_height="800px"
+                            app:srcCompat="@drawable/affliction2"
+                            tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="128dp"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <Button
+                                    android:id="@+id/button10"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Like" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="150dp"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <Button
+                                    android:id="@+id/button11"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Comment" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <Button
+                                    android:id="@+id/button12"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Share" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="1.0"
+                        tools:layout_editor_absoluteX="1dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="62dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/imageView41"
+                                android:layout_width="24dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/jon_jones"
+                                tools:srcCompat="@tools:sample/avatars" />
+
+                            <TextView
+                                android:id="@+id/textView5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="Von Godinez"
+                                android:textAlignment="center" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton7"
+                                android:layout_width="9dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:backgroundTint="#000000"
+                                app:srcCompat="@android:drawable/ic_dialog_dialer" />
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/imageView50"
+                            android:layout_width="wrap_content"
+                            android:layout_height="800px"
+                            app:srcCompat="@drawable/affliction2"
+                            tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="128dp"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <Button
+                                    android:id="@+id/button10"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Like" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="150dp"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <Button
+                                    android:id="@+id/button11"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Comment" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <Button
+                                    android:id="@+id/button12"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Share" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="1.0"
+                        tools:layout_editor_absoluteX="1dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="62dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/imageView41"
+                                android:layout_width="24dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/jon_jones"
+                                tools:srcCompat="@tools:sample/avatars" />
+
+                            <TextView
+                                android:id="@+id/textView5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="Von Godinez"
+                                android:textAlignment="center" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton7"
+                                android:layout_width="9dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:backgroundTint="#000000"
+                                app:srcCompat="@android:drawable/ic_dialog_dialer" />
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/imageView50"
+                            android:layout_width="wrap_content"
+                            android:layout_height="800px"
+                            app:srcCompat="@drawable/affliction2"
+                            tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="128dp"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <Button
+                                    android:id="@+id/button10"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Like" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="150dp"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <Button
+                                    android:id="@+id/button11"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Comment" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <Button
+                                    android:id="@+id/button12"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Share" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="1.0"
+                        tools:layout_editor_absoluteX="1dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="62dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/imageView41"
+                                android:layout_width="24dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/jon_jones"
+                                tools:srcCompat="@tools:sample/avatars" />
+
+                            <TextView
+                                android:id="@+id/textView5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="Von Godinez" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton7"
+                                android:layout_width="9dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:backgroundTint="#000000"
+                                app:srcCompat="@android:drawable/ic_dialog_dialer" />
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/imageView50"
+                            android:layout_width="wrap_content"
+                            android:layout_height="800px"
+                            app:srcCompat="@drawable/affliction2"
+                            tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="128dp"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <Button
+                                    android:id="@+id/button10"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Like" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="150dp"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <Button
+                                    android:id="@+id/button11"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Comment" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <Button
+                                    android:id="@+id/button12"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Share" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
