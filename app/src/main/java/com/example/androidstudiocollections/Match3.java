@@ -17,7 +17,7 @@ import android.os.Handler;
 
 
 public class Match3 extends AppCompatActivity {
-    private static final int ANIMATION_DELAY = 300; // Delay in milliseconds
+    private static final int ANIMATION_DELAY = 300;
     private static final int GRID_SIZE = 5;
     private static final int MATCH_THRESHOLD = 3;
     private static final int SCORE_PER_MATCH = 1;
@@ -70,9 +70,9 @@ public class Match3 extends AppCompatActivity {
                 grid[i][j] = generateRandomTile();
             }
         }
-        // Check for matches after initializing the grid
+
         while (checkInitialMatches()) {
-            // If matches are found, regenerate the grid until no matches are found
+
             for (int i = 0; i < GRID_SIZE; i++) {
                 for (int j = 0; j < GRID_SIZE; j++) {
                     grid[i][j] = generateRandomTile();
@@ -87,21 +87,21 @@ public class Match3 extends AppCompatActivity {
         for (int i = 0; i < GRID_SIZE; i++) {
             for (int j = 0; j < GRID_SIZE - 2; j++) {
                 if (grid[i][j] == grid[i][j + 1] && grid[i][j] == grid[i][j + 2]) {
-                    return true; // Match found
+                    return true;
                 }
             }
         }
 
-        // Check for matches in columns
+
         for (int j = 0; j < GRID_SIZE; j++) {
             for (int i = 0; i < GRID_SIZE - 2; i++) {
                 if (grid[i][j] == grid[i + 1][j] && grid[i][j] == grid[i + 2][j]) {
-                    return true; // Match found
+                    return true;
                 }
             }
         }
 
-        return false; // No match found
+        return false;
     }
 
     private int generateRandomTile() {
@@ -115,16 +115,16 @@ public class Match3 extends AppCompatActivity {
             return false;
         }
 
-        // Check if the selected tiles are adjacent
-        if (Math.abs(row1 - row2) == 1 && col1 == col2) { // Check for adjacent tiles in the same column
-            // Check if there are already three adjacent candies in the same column
+
+        if (Math.abs(row1 - row2) == 1 && col1 == col2) {
+
             if ((row1 < GRID_SIZE - 2 && grid[row1][col1] == grid[row1 + 1][col1] && grid[row1][col1] == grid[row1 + 2][col1]) ||
                     (row2 < GRID_SIZE - 2 && grid[row2][col2] == grid[row2 + 1][col2] && grid[row2][col2] == grid[row2 + 2][col2])) {
                 return false;
             }
             return true;
-        } else if (Math.abs(col1 - col2) == 1 && row1 == row2) { // Check for adjacent tiles in the same row
-            // Check if there are already three adjacent candies in the same row
+        } else if (Math.abs(col1 - col2) == 1 && row1 == row2) {
+
             if ((col1 < GRID_SIZE - 2 && grid[row1][col1] == grid[row1][col1 + 1] && grid[row1][col1] == grid[row1][col1 + 2]) ||
                     (col2 < GRID_SIZE - 2 && grid[row2][col2] == grid[row2][col2 + 1] && grid[row2][col2] == grid[row2][col2 + 2])) {
                 return false;
@@ -132,7 +132,7 @@ public class Match3 extends AppCompatActivity {
             return true;
         }
 
-        return false; // Not adjacent
+        return false;
     }
 
 
@@ -170,19 +170,21 @@ public class Match3 extends AppCompatActivity {
                         replaceTiles(i - 2, j, i, j);
                         score += SCORE_PER_MATCH;
                         checkMatches();
+
                     }
                 } else {
                     count = 1;
                 }
             }
         }
+        updateScore();
     }
 
     private void updateScore() {
-        // Update the score display
-        // For example, if you have a TextView to display the score:
         TextView scoreTextView = findViewById(R.id.score_text_view);
-        scoreTextView.setText("Score: " + score);
+        if (!isFinishing()) {
+            scoreTextView.setText("Score: " + score);
+        }
     }
 
     private void replaceTiles(int startRow, int startCol, int endRow, int endCol) {
@@ -200,23 +202,20 @@ public class Match3 extends AppCompatActivity {
         animation.setAnimationListener(new Animation.AnimationListener() {
             @Override
             public void onAnimationStart(Animation animation) {
-                // Animation started
             }
 
             @Override
             public void onAnimationEnd(Animation animation) {
-                // Animation ended
                 updateGridAdapter();
-                checkMatches(); // Check matches after animation finishes
+                checkMatches();
             }
 
             @Override
             public void onAnimationRepeat(Animation animation) {
-                // Animation repeated
             }
         });
 
-        // Start animation on the corresponding view in the GridView
+
         gridView.getChildAt(row * GRID_SIZE + col).startAnimation(animation);
     }
 
